@@ -8,7 +8,7 @@ import datetime
 # strategy gets out of the trade when short term EWM moves below long term
 
 from datetime import datetime
-crypto_data = pd.read_csv("C:/Users/Niv/Downloads/BITBAY_BTCUSD, 1D (1).csv") #open high low close MA Volume Voluma MA RSI Histogram MACD Signal
+crypto_data = pd.read_csv("C:/Users/***/Downloads/BITBAY_BTCUSD, 1D (1).csv") #open high low close MA Volume Voluma MA RSI Histogram MACD Signal
 crypto_data["time"] = [datetime.fromtimestamp(x).strftime("%d-%m-%Y") for x in crypto_data["time"]]
 crypto_data.set_index('time')
 
